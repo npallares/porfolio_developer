@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+
+    <!-- Google Fonts Monteserrat -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Link Css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Nicolás Pallarés</title>
+</head>
+<body>
+    <nav id="nav" class="">
+        <div>
+            <img src="./assets/logo_np-01.png" alt="" class="logo">
+        </div>
+        <ul class="">
+            <a href="#"><li>Home</li></a>
+            <a href="#proyectos_section"><li>Proyectos</li></a>
+            <a href="#about_section"><li>Sobre mi</li></a>
+            <a href="#"><li>Contacto</li></a>
+        </ul>
+        <div class="disp-none hamburger" alt="">
+            <img src="./assets/Hamburger.png" alt="">
+        </div>
+    </nav>
+
+    <section class="home_container" id="home_section">
+        
+            <div class="home_info">
+                <p class="p1" data-aos="fade-right" >Hola Mundo!&nbsp soy</p>
+                <p class="p2" id="nombre" data-aos="fade-right">Nicolás</p>
+                <p class="p2-2" id="apellido"data-aos="fade-right">Pallarés.</p>
+                <p class="p3" data-aos="fade-right">FRONTEND DEV. <span>+</span> DISEÑADOR GRÁFICO.</p>
+                <p class="p4" data-aos="fade-right">Soy un desarrollador frontend con mentalidad de diseñador. Vivo en Buenos Aires, Argentina.</p>
+                <div class="btn-contacto-home" data-aos="fade-right">CONTACTAME</div>
+            </div>
+            <div class="home_img">
+                <img src="./assets/foto-home.png" alt="" class="home_foto" data-aos="fade-left">
+            </div>
+        
+    </section>
+
+    <section class="proyectos_container" id="proyectos_section">
+        <div class="proyectos_info_container">
+            <div>
+                <p class="p6" id="proyectos" data-aos="fade-left" >Proyectos.</p>           
+                <p class="p5" data-aos="fade-right">ALGUNAS COSAS EN LAS QUE ESUVE TRABAJANDO.</p>
+            </div>
+        </div>
+
+        <div class="proyectos_cards_container">
+            <div class="card" data-aos="fade-left">
+                <img src="assets/calculator.png" alt="" srcset="">
+                <div class="card_title">01 Calculadora</div>
+                <p> Calculadora completamente funcional realizada con Javascript Css y Html.</p>
+                <button class="card_btn">Ver en Github</button>
+            </div>
+            <div class="card" data-aos="fade-right">
+                <img src="assets/pokedex.png" alt="" srcset="">
+                <div class="card_title">02 Pokedex</div>
+                <p> Proyecto realizado con la Api de pokemon. Se utilizó Fetch Javascript Css y Html.</p>
+                <button class="card_btn">Ver en Github</button>
+            </div>
+            <div class="card" data-aos="fade-left" >
+                <img src="assets/eltipeado.png" alt="" srcset="">
+                <div class="card_title">03 El Tipeado</div>
+                <p>Juego realizado en Javascript Css y Html con el fin de agilizar la mecanografía.</p>
+                <button class="card_btn">Ver en Github</button>
+            </div>
+            <div class="card" data-aos="fade-right">
+                <img src="assets/nom.png" alt="" srcset="">
+                <div class="card_title">04 Tienda Nom</div>
+                <p>Tienda de Ecommerce realizada con React, Firebase y la Api de Mercadolibre</p>
+                <button class="card_btn">Ver en Github</button>
+            </div>
+          
+        </div>
+    </section>
+
+    <section class="about_container" id="about_section">
+        <div class="about_info_container" >
+            <p class="p7" >Sobre mi.</p>
+            <p class="p8" >¡Hola! Mi nombre es Nicolás y disfruto creando cosas que viven en Internet. Mi interés en el desarrollo web comenzó cuando decidí incorporar mis conocimientos de diseño gráfico a un proposito mayormente funcional como es el desarrollo Frontend. Soy un apasioando por la tipografía y su correcto uso estético.</p>
+            <div class="skills_container" >
+                <p class="p9">Estas son algunas de las tecnologías con las que he estado trabajando y practicando últimamente.</p>
+            </div>            
+        </div>
+        <div class="about_img" data-aos="fade-left">
+            <img src="./assets/foto.png" alt="" srcset="">
+        </div>
+    </section>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
