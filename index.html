@@ -5,7 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="preload" as="script" href="script.js" />
+    <link rel="preload" as="style" href="style.css" />
+    <link rel="preload" as="image" href="./assets/bootstrap.png" />
+    <link rel="preload" as="image" href="./assets/calculator.png" />
+    <link rel="preload" as="image" href="./assets/cohete-home.png" />
+    <link rel="preload" as="image" href="./assets/css.png" />
+    <link rel="preload" as="image" href="./assets/eltipeado.png" />
+    <link rel="preload" as="image" href="./assets/eltipeado2.png" />
+    <link rel="preload" as="image" href="./assets/fondo_contacto.png" />
+    <link rel="preload" as="image" href="./assets/frontend1.png" />
+    <link rel="preload" as="image" href="./assets/git.png" />
+    <link rel="preload" as="image" href="./assets/Hamburger.png" />
+    <link rel="preload" as="image" href="./assets/html5.png" />
+    <link rel="preload" as="image" href="./assets/js.png" />
+    <link rel="preload" as="image" href="./assets/logo_np-01.png" />
+    <link rel="preload" as="image" href="./assets/nom.png" />
+    <link rel="preload" as="image" href="./assets/planet1.png" />
+    <link rel="preload" as="image" href="./assets/planet2.png" />
+    <link rel="preload" as="image" href="./assets/pokedex.png" />
+    <link rel="preload" as="image" href="./assets/react.png" />
+    <link rel="preload" as="image" href="./assets/sass.png" />
+    <link rel="preload" as="image" href="./assets/satelite.png" />
+    <link rel="preload" as="pdf" href="./assets/NPALLARES_CV.pdf" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon"/>
+
+
+    <!-- Email -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_irVc0Tm0RDQbO51vvwwph");
+    })();
+    </script>
 
     <!-- Google Fonts Monteserrat -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,20 +53,22 @@
     <title>Nicolás Pallarés</title>
 </head>
 <body>
-    <nav id="nav" class="">
-        <div>
-            <img src="./assets/logo_np-01.png" alt="" class="logo">
-        </div>
-        <ul class="">
-            <a href="#"><li>Home</li></a>
-            <a href="#proyectos_section"><li>Proyectos</li></a>
-            <a href="#about_section"><li>Sobre mi</li></a>
-            <a href="#"><li>Contacto</li></a>
-        </ul>
-        <div class="disp-none hamburger" alt="">
-            <img src="./assets/Hamburger.png" alt="">
-        </div>
-    </nav>
+   
+    
+        <nav id="nav" class="nav">
+            <a href="#">
+                <img src="./assets/logo_np-01.png" alt="" class="logo" id="logo">
+            </a>
+            <ul class="nav-menu">
+                <a href="#home_section" ><li class="nav-menu-item">Home</li></a>
+                <a href="#proyectos_section"><li class="nav-menu-item">Proyectos</li></a>
+                <a href="#about_section"><li class="nav-menu-item">Sobre mi</li></a>
+                <a href="#contact_section"><li class="nav-menu-item">Contacto</li></a>
+            </ul>
+            <div class="disp-none hamburger" alt="">
+                <img src="./assets/Hamburger.png" alt="#" id="hamburger">
+            </div>
+        </nav>
 
     <section class="home_container" id="home_section">
         
@@ -41,14 +78,20 @@
                 <p class="p2-2" id="apellido"data-aos="fade-right">Pallarés.</p>
                 <p class="p3" data-aos="fade-right">FRONTEND DEV. <span>+</span> DISEÑADOR GRÁFICO.</p>
                 <p class="p4" data-aos="fade-right">Soy un desarrollador frontend con mentalidad de diseñador. Vivo en Buenos Aires, Argentina.</p>
-                <div class="btn-contacto-home" data-aos="fade-right">CONTACTAME</div>
+                <a href="./assets/NPALLARES_CV.pdf" target="_blank"><div class="btn-contacto-home" data-aos="fade-right">DESCARGAR CV</div></a>
             </div>
             <div class="home_img">
-                <img src="./assets/foto-home.png" alt="" class="home_foto" data-aos="fade-right">
+                <img src="./assets/cohete-home.png" alt="" class="home_foto" data-aos="fade-right">
             </div>
         
     </section>
-
+    
+    
+        <div id="flotante1">
+            <img src="./assets/satelite.png" alt="" srcset="">
+        </div>
+    
+    
     <section class="proyectos_container" id="proyectos_section">
         <div class="proyectos_info_container">
             <div>
@@ -58,45 +101,117 @@
         </div>
 
         <div class="proyectos_cards_container">
-            <div class="card" data-aos="fade-right">
-                <img src="assets/calculator.png" alt="" srcset="">
-                <div class="card_title">01 Calculadora</div>
-                <p> Calculadora completamente funcional realizada con Javascript Css y Html.</p>
-                <button class="card_btn">Ver en Github</button>
+
+            <div class="card" data-aos="fade-right" >
+                <img src="assets/eltipeado.png" alt="" srcset="">
+                <div class="card_title">01 El Tipeado</div>
+                <p>Juego realizado en Javascript Css y Html con el fin de agilizar la mecanografía.</p>
+                <a href="https://github.com/npallares/El-tipeado" target="_blank" ><button class="card_btn">Ver en Github</button></a>
             </div>
+
             <div class="card" data-aos="fade-right">
                 <img src="assets/pokedex.png" alt="" srcset="">
                 <div class="card_title">02 Pokedex</div>
                 <p> Proyecto realizado con la Api de pokemon. Se utilizó Fetch Javascript Css y Html.</p>
-                <button class="card_btn">Ver en Github</button>
+                <a href="https://github.com/npallares/Pokedex" target="_blank" ><button class="card_btn">Ver en Github</button></a>
             </div>
-            <div class="card" data-aos="fade-right" >
-                <img src="assets/eltipeado.png" alt="" srcset="">
-                <div class="card_title">03 El Tipeado</div>
-                <p>Juego realizado en Javascript Css y Html con el fin de agilizar la mecanografía.</p>
-                <button class="card_btn">Ver en Github</button>
-            </div>
+
             <div class="card" data-aos="fade-right">
                 <img src="assets/nom.png" alt="" srcset="">
-                <div class="card_title">04 Tienda Nom</div>
-                <p>Tienda de Ecommerce realizada con React, Firebase y la Api de Mercadolibre</p>
-                <button class="card_btn">Ver en Github</button>
+                <div class="card_title">03 Tienda Nom</div>
+                <p>Tienda NOM es la simulación de un Ecommerce realizada con Html, Css, JS, React y Firebase </p>
+                <a href="https://github.com/npallares/tienda-nom" target="_blank" ><button class="card_btn">Ver en Github</button></a>
             </div>
-          
+            <div class="card" data-aos="fade-right">
+                <img src="assets/weatherapp.png" alt="" srcset="">
+                <div class="card_title">04 Weather app</div>
+                <p>App creada en React que brinda el clima en tu ubicación, el pronostico de 5 dias y de 5 ciudades elegidas.</p>
+                <a href="https://github.com/npallares/weather-app" target="_blank" ><button class="card_btn">Ver en Github</button></a>
+            </div>
         </div>
     </section>
 
     <section class="about_container" id="about_section">
-        <div class="about_info_container" >
-            <p class="p7" >Sobre mi.</p>
-            <p class="p8" >¡Hola! Mi nombre es Nicolás y disfruto creando cosas que viven en Internet. Mi interés en el desarrollo web comenzó cuando decidí incorporar mis conocimientos de diseño gráfico a un proposito mayormente funcional como es el desarrollo Frontend. Soy un apasioando por la tipografía y su correcto uso estético.</p>
-            <div class="skills_container" >
+        <div class="about_info_container">
+            <p class="p7"  data-aos="fade-right" id="sobre" >Sobre mi.</p>
+            <p class="p8"  data-aos="fade-right" >¡Hola! Mi nombre es Nicolás y soy Frontend Developer Jr. Mi interés en el desarrollo web comenzó cuando decidí incorporar mis conocimientos de diseño gráfico a un propósito mayormente funcional como es el desarrollo web. Soy un apasionado por el aprendizaje de nuevas tecnologías.</p>
+            <div class="skills_container"  data-aos="fade-right">
                 <p class="p9">Estas son algunas de las tecnologías con las que he estado trabajando y practicando últimamente.</p>
+            </div>
+            <div class="tech_container" data-aos="fade-right">
+                <div class="tech_data_container">
+                    <img src="./assets/html5.png" alt="" srcset="">
+                    <p>HTML5</p>
+                </div>
+                <div class="tech_data_container">
+                    <img src="./assets/css.png" alt="" srcset="">
+                    <p>CSS3</p>
+                </div>
+                <div class="tech_data_container">
+                    <img src="./assets/js.png" alt="" srcset="">
+                    <p>JAVASCRIPT</p>
+                </div>
+                <div class="tech_data_container">
+                    <img src="./assets/react.png" alt="" srcset="">
+                    <p>REACT</p>
+                </div>
+                <div class="tech_data_container">
+                    <img src="./assets/bootstrap.png" alt="" srcset="">
+                    <p>BOOTSTRAP</p>
+                </div>
+                <div class="tech_data_container">
+                    <img src="./assets/git.png" alt="" srcset="">
+                    <p>GIT</p>
+                </div>
+                <div class="tech_data_container">
+                    <img src="./assets/sass.png" alt="" srcset="">
+                    <p>SASS</p>
+                </div>
             </div>            
         </div>
         <div class="about_img" data-aos="fade-right">
-            <img src="./assets/foto.png" alt="" srcset="">
+            <img src="./assets/frontend1.png" alt="" srcset="">
         </div>
+    </section>
+    
+    <section class="contact_container" id="contact_section">
+        <div class="contact_img_left">
+            <img src="./assets/planet1.png" id="planeta1" alt="" srcset="">
+        </div>
+
+        <div class="contact_form_container" >
+            <p class="p11" id="contacto" >Contacto.</p>
+            <div class="contact_input disp_none">
+                <label><p class="p10">Nombre</p>
+                <input type="text" class="form-input" id="formName">
+                </label>
+            </div>
+            <div class="contact_input disp_none">
+                <label><p class="p10">Email</p>
+                <input type="email" class="form-input" id="formEmail">
+                </label>
+            </div>
+            <div class="contact_input disp_none">
+                <label><p class="p10">Motivo</p>
+                <input type="text" class="form-input" id="formAbout">
+                </label>
+            </div>
+            <div class="contact_input disp_none">
+                <label for="exampleFormControlTextarea1"><p class="p10">Mensaje</p>
+                    <textarea class="form-area" id="message" rows="4"></textarea>
+                </label>
+            </div>
+            <div class="p12 disp_none" id="divMsj">¡Mensaje Enviado, Muchas gracias! 🚀</div>
+            <div>
+                <button onclick="sendMail()" type="submit" class="btn-contacto"  data-bs-toggle="modal" data-bs-target="#exampleModal" id="btnSubmit">ENVIAR</button>
+
+              </div>
+        </div>
+
+        <div class="contact_img_rigth">
+            <img src="./assets/planet2.png" id="planeta2" alt="" srcset="">
+        </div>
+       
     </section>
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
