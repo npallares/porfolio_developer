@@ -113,7 +113,7 @@ $contacto.addEventListener("mouseout",el=>{
 
 
 
-document.addEventListener("scroll", function(){ 
+/* document.addEventListener("scroll", function(){ 
     if($ul.classList.contains("isActive")){
 
     }else{
@@ -129,7 +129,7 @@ document.addEventListener("scroll", function(){
         }
         lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
 }
-}, false);
+}, false); */
 
 
 //Funcion email
