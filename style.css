@@ -757,7 +757,8 @@ img{
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 200px;
+        /* height: 200px; */
+        padding-top: 70px;
     }
 
     a, a:link, a:visited, a:active{
@@ -866,7 +867,8 @@ img{
     }
     .about_img img{
         width: 90%;
-        margin-top: -50rem;
+        display: none;
+        /* margin-top: -50rem; */
         /* margin-left: 2.5rem; */
     }
 
@@ -990,8 +992,7 @@ img{
     }
 
     .contact_container{
-        margin-top: -4rem;
-        margin-top: 5rem;
+        margin: 0;
     }
 
     .about_img img{
@@ -999,6 +1000,7 @@ img{
     }
 
     .contact_form_container{
+        margin-top: 100px;
         width: 80%;
     }
 
